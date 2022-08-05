@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "elWtYoUGoMNug5/mHixgOUJOtKMZoajkiY0XonRDXqEuUlBglusDaK8JeEuMzK9xic+sD2+ZYGuefVdIfNtMeg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\GencayExample\\CustomRouteHandleExample\\CustomRouteHandleExample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\magick.net-q16-anycpu\\11.3.0\\magick.net-q16-anycpu.11.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\magick.net.core\\11.3.0\\magick.net.core.11.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

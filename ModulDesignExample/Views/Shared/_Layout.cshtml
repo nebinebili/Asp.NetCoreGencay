@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ModulDesignExample</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+  
+    <partial name="~/Views/Home/Partials/_HeaderPartial.cshtml"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <partial name="~/Views/Home/Partials/_CarouselPartial.cshtml" />
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <partial name="~/Views/Home/Partials/_LeftMenuPartial.cshtml" />
+            </div>
+
+            <div class="col-md-8">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        @await Component.InvokeAsync("Personeller")
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+    </div>
+
+    <partial name="~/Views/Home/Partials/_FooterPartial.cshtml" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

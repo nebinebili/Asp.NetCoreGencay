@@ -1,0 +1,10 @@
+﻿@model List<WorkerListVM>
+
+<ul>
+    @foreach (var worker in Model)
+    {
+        <li>
+            @worker.Name @worker.Surname @worker.Position
+        </li>
+    }
+</ul>

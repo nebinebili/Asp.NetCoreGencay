@@ -1,0 +1,28 @@
+﻿@*-- Bir nece obyektin viewmodel ile qebulu--*@
+@*@model GencayExample.Models.ViewModel.UserProduct
+
+    <h3>@Model.Product.ProductName</h3>
+    <h3>@Model.User.Name</h3>*@
+
+@* --Bir nece obyektin tuple ile qebulu--*@
+@*@model (GencayExample.Models.Product p, GencayExample.Models.User u)
+
+    <h3>@Model.p.ProductName</h3>
+    <h3>@Model.u.Name</h3>*@
+
+@* --Custom HtmlHelper funksiyasi-- *@
+@*@using GencayExample.Extensions
+@Html.TextBox("txtAdi", null, new { style = "background-color:blue" })
+
+@Html.CustomTextBox("txtCustomAdi", null, "Name")*@
+
+@* -- Custom TagHelper -- *@
+@*@addTagHelper * ,Microsoft.AspNetCore.Mvc.TagHelpers 
+@addTagHelper *,GencayExample
+
+<a href="mailto:nbilinbi7@gmail.com">Email</a> 
+<br />
+<email a="abc" mail="nbilinbi7@gmail.com" display="Nebili Email"></email>*@
+
+
+
